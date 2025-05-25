@@ -3,9 +3,29 @@
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
     "@cypress/webpack-preprocessor": "^6.0.4",
     "cypress": "^14.3.3",
+    "cypress-xpath": "^2.0.1",
     "esbuild": "^0.25.4"
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^22.0.1"
-  }
+  },
+  "name": "cao-cypress-bdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanifrazin/cao-cypress-bdd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hanifrazin/cao-cypress-bdd/issues"
+  },
+  "homepage": "https://github.com/hanifrazin/cao-cypress-bdd#readme"
 }
