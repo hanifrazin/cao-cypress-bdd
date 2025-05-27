@@ -32,4 +32,10 @@ jobs:
         run: ls -lah node_modules/.bin/
 
       - name: Run Cypress tests
-        run: npm run bdd
+        run: npm run test:report
+
+      - name: Upload Cypress Reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: mochawesome-report
+          path: cypress/reports/html

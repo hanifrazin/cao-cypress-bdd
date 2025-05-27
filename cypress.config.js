@@ -20,5 +20,14 @@ module.exports = defineConfig({
   },
   chromeWebSecurity: false,
   defaultCommandTimeout: 20000,
-  video: true
+  video: true,
+  reporter: 'mochawesome',
+  reporterOptions: {
+    reportDir: 'cypress/report',  // Folder output laporan
+    overwrite: true,                 // Tidak menimpa laporan lama
+    html: true,                     // Tidak menghasilkan laporan HTML (bisa diubah sesuai kebutuhan)
+    json: true,                      // Menghasilkan laporan dalam format JSON
+    timestamp: 'dd:MM:yyyy_HHMM',      // Format timestamp pada nama file laporan
+    assertionChart: true             // Menampilkan grafik assertion di laporan
+  }
 });
