@@ -35,7 +35,7 @@ jobs:
         run: npm run test:report
 
       - name: Upload Cypress Reports
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: mochawesome-report
           path: cypress/reports/html
