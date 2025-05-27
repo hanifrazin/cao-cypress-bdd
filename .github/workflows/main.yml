@@ -32,4 +32,4 @@ jobs:
         run: ls -lah node_modules/.bin/
 
       - name: Run Cypress tests
-        run: ./node_modules/.bin/cypress run
+        run: npm run bdd
