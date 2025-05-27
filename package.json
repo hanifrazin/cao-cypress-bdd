@@ -14,7 +14,11 @@
   "description": "",
   "main": "cypress.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bdd": "npx cypress run --browser chrome --headless --spec \"cypress/e2e/features/*.feature\"",
+    "bdd:login": "npx cypress run --browser chrome --headless --spec \"cypress/e2e/features/login.feature\"",
+    "bdd:cart": "npx cypress run --browser chrome --headless --spec \"cypress/e2e/features/shopping_cart.feature\"",
+    "bdd:checkout": "npx cypress run --browser chrome --headless --spec \"cypress/e2e/features/checkout.feature\""
   },
   "repository": {
     "type": "git",
