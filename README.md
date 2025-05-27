@@ -46,4 +46,4 @@
      ```
 
  ### Note
- You can see my recording video to see how it looks like [running this automation](https://github.com/hanifrazin/cao-cypress-bdd/tree/main/cypress/videos) 
+ You can see my recording video to see how it looks like [running this automation](https://drive.google.com/drive/folders/1IM6Ox2UwxOk4pqBtEVS2Ur6QfH5e3r-e?usp=sharing) 
