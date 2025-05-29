@@ -24,7 +24,7 @@ module.exports = defineConfig({
   reporter: 'mochawesome',
   reporterOptions: {
     reportDir: 'cypress/report',  // Folder output laporan
-    overwrite: true,                 // Tidak menimpa laporan lama
+    overwrite: false,                 // Tidak menimpa laporan lama
     html: true,                     // Tidak menghasilkan laporan HTML (bisa diubah sesuai kebutuhan)
     json: true,                      // Menghasilkan laporan dalam format JSON
     timestamp: 'dd:MM:yyyy_HHMM',      // Format timestamp pada nama file laporan

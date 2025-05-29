@@ -31,14 +31,17 @@ jobs:
       - name: Debug CI
         run: ls -lah node_modules/.bin/
 
-      - name: Run Cypress tests
-        run: npm run test:report
+      - name: Run Cypress Tests
+        run: npm run bdd
 
       - name: Debug Report Folder
-        run: ls -lah cypress/report/html
+        run: ls -lah cypress/report
+
+      - name: Run Mochawesome Report
+        run: npm run report
 
       - name: Upload Cypress Reports
         uses: actions/upload-artifact@v4
         with:
           name: mochawesome-report
-          path: cypress/report/html
+          path: cypress/report
